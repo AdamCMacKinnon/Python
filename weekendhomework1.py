@@ -26,43 +26,42 @@
 
 ## 4.) is_even function
 
-def is_even(num):
-    if (num % 2 == 0):
-        print('True')
-        return True
-    else: 
-        print('False')
+# def is_even(num):
+#     if (num % 2 == 0):
+#         return True
+#     else: 
+#         return False
 
-is_even(3)
 
-## 5.) is_odd function
+# print(is_even(3))
 
-def is_odd(num):
-    if (is_even(num) is not True):
-        print('True')
-        return True    
-    else:
-        print('False')
+# ## 5.) is_odd function
 
-is_odd(13)
+# def is_odd(num):
+#     if (is_even(num) is not True):
+#         return True    
+#     return False
 
-## 6.) only_evens function
+# print(is_odd(13))
+
+# ## 6.) only_evens function
 
 def only_evens(nums):
     evens = []
-    for num in range(len(nums)):
-        evens.append(num % 2 == 0)
-    print(evens)
+    for num in nums:
+        if (num % 2 == 0):
+            evens.append(num)
+    return evens
 
-only_evens([11,20,42,97,10])
+print(only_evens([11,20,42,97,10]))
 
 ## 7.) only_odds function
 
-def only_odds(nums):
-    odds = []
-    for num in range(len(nums)):
-        odds.append(num % 2 != 0)
-    print(odds)
+# def only_odds(nums):
+#     odds = []
+#     for num in range(len(nums)):
+#         odds.append(num % 2 != 0)
+#     print(odds)
     
 
-only_odds([11,20,42,97,10])
+# only_odds([11,20,42,97,10])
